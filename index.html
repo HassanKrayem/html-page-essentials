@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-CA" dir="ltr">
 <head>
+
+	<!-- CSS Served to all users -->
+	<!-- good practice to set the html, body font size to 16px and use em / rem unit -->
+    <link rel="stylesheet" href="all.css" media="all" />
+    <!-- CSS Served to screens that are at least 20em wide -->
+    <link rel="stylesheet" href="small.css" media="(min-width: 20em)" />
+    <!-- CSS Served to screens that are at least 64em wide -->
+    <link rel="stylesheet" href="medium.css" media="(min-width: 64em)" />
+    <!-- CSS Served to screens that are at least 90em wide -->
+    <link rel="stylesheet" href="large.css" media="(min-width: 90em)" />
+    <!-- CSS Served to screens that are at least 120em wide -->
+    <link rel="stylesheet" href="extra-large.css" media="(min-width: 120em)" />
+    <!-- CSS Served to print media, like printers -->
+    <link rel="stylesheet" href="print.css" media="print" />
+
 	<!-- see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name for list of meta tags you can use in the page-->
 	<meta charset="utf-8"> 
 	<meta name="referrer" content="origin">
